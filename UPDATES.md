@@ -5,6 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
+**Unranked maps say so.** Wherever a play on an unranked map shows up (score cards, profiles, map pages, replays),
+it's marked UNRANKED instead of showing PP as if it counted, with what it would be worth set to the side.
+
+**Medals.** Earn medals like osu!'s for harder passes, full combos, accuracy, playing a lot, big totals, #1s and the
+challenge sheet. New ones show up when you submit, and your page on the website shows them all, with how rare each one is.
+
+**Hide the grid in replays.** The replay viewer has a 3×3 grid switch under View.
+
 **Every challenge sheet map is ranked.** All the maps on the community challenge sheet count toward your total, and the
 bot fetches any it doesn't have by itself. A play on a sheet map counts the moment you submit it.
 
