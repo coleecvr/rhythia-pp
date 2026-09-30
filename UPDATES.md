@@ -5,8 +5,19 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
+**A new logo.** A game note with a star in it, for star ratings, on the Discord server, the bot and the website.
+
+**New plays show up within about a minute.** The website follows the Discord bot closely, and pages you have
+open refresh themselves when something changes: no reloading.
+
+**Songs in replays, and smoother playback.** Connect your Sound Space Plus maps folder once, and every replay plays
+its song from your own copy of the map (your browser remembers the folder). Challenge pool maps load their song by
+themselves. The cursor trail is now a smooth streak like the game's, and there's an optional frame-rate counter.
+
+**Your server profile picture.** If you use a different picture in the Discord server, the website shows that one.
+
 **The website goes public.** The leaderboard now has its own address on the web, online all the time:
-[https://coleecvr.github.io/rhythia-pp/](https://coleecvr.github.io/rhythia-pp/). It updates by itself a few minutes after every new play.
+[https://coleecvr.github.io/rhythia-pp/](https://coleecvr.github.io/rhythia-pp/).
 
 **Share links with preview cards.** Every map, player and play has a **Copy link** button. Paste the link in Discord
 and it shows a card with the map, the score or the player's rank.
