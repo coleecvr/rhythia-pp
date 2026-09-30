@@ -5,6 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
+**Full-screen replays at your screen's refresh rate.** Replays draw far less each frame, so full screen keeps up
+with fast screens (144 Hz, 240 Hz and up) instead of dropping to 60.
+
+**Top plays.** The rankings page has a new tab with the best plays on ranked maps.
+
+**Grades match the game.** D now means 80% or better, and anything lower is an F, with its own grey badge,
+just like in Sound Space Plus.
+
 **A new logo.** A game note with a star in it, for star ratings, on the Discord server, the bot and the website.
 
 **New plays show up within about a minute.** The website follows the Discord bot closely, and pages you have
@@ -41,7 +49,7 @@ a map grid with covers, and map and player pages with charts.
 - map cards showing where the notes land and where the map gets hard;
 - player cards with rank history and best plays;
 - a leaderboard podium, celebrations for new ranks and milestones, and a weekly roundup poster;
-- grade emojis (SS, S, A, B, C, D).
+- grade emojis (SS, S, A, B, C, D, F).
 
 **The Discord bot.** Submit plays with `/submit`, look anyone up with `/profile`, check a map's leaderboard, and
 follow new #1s, top plays and newly ranked maps in their own channels. Roles are given out as you climb, and
