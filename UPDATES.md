@@ -5,6 +5,17 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
+**Every challenge sheet map is ranked.** All the maps on the community challenge sheet count toward your total, and the
+bot fetches any it doesn't have by itself. A play on a sheet map counts the moment you submit it.
+
+**Only your own plays.** Your first replay links your PC to your account, and replays recorded on someone else's PC
+are refused. Copies of replays downloaded from the website can't be submitted either.
+
+**Songs in replays, more often.** The replay viewer finds a map's song in your maps folder under any name the map
+goes by, and challenge sheet maps can always load their song from the sheet.
+
+**The bot gets back online by itself** after a network drop or when your PC wakes from sleep.
+
 **Full-screen replays at your screen's refresh rate.** Replays draw far less each frame, so full screen keeps up
 with fast screens (144 Hz, 240 Hz and up) instead of dropping to 60.
 
