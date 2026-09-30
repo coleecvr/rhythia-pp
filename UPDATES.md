@@ -1,0 +1,43 @@
+# What's new
+
+The latest changes to Rhythia Community PP, newest first. Updates are announced in the [Discord](https://discord.gg/YwrN6EmSZj)
+too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the newest version.
+
+## September 2026: launch
+
+**The website goes public.** The leaderboard now has its own address on the web, online all the time:
+[https://coleecvr.github.io/rhythia-pp/](https://coleecvr.github.io/rhythia-pp/). It updates by itself a few minutes after every new play.
+
+**Share links with preview cards.** Every map, player and play has a **Copy link** button. Paste the link in Discord
+and it shows a card with the map, the score or the player's rank.
+
+**Discord profile pictures on the website**, instead of a plain letter. The podium keeps #1 in the middle even while
+there are fewer than three players.
+
+**A replay viewer that looks like the game.** Watch any play with the same note colours, 3D view, cursor trail,
+combo, grade and hit sounds as Sound Space Plus. Load your copy of the map and the song plays in sync. Misses show
+as small, quick marks, so a rough section doesn't cover the screen.
+
+**Every map is here.** Every downloaded map has a star rating, the PP a full combo is worth, and its own page and
+leaderboard. Only ranked maps give PP. The **community challenge sheet** is built in: its maps are marked
+*Challenge pool* and curators can rank them in one go.
+
+**A new look for the website:** a podium for the top three, the latest plays and newly ranked maps on the home page,
+a map grid with covers, and map and player pages with charts.
+
+**Cards in Discord.** The bot now makes an image for everything:
+- a score card for every play, with PP, accuracy and grade;
+- map cards showing where the notes land and where the map gets hard;
+- player cards with rank history and best plays;
+- a leaderboard podium, celebrations for new ranks and milestones, and a weekly roundup poster;
+- grade emojis (SS, S, A, B, C, D).
+
+**The Discord bot.** Submit plays with `/submit`, look anyone up with `/profile`, check a map's leaderboard, and
+follow new #1s, top plays and newly ranked maps in their own channels. Roles are given out as you climb, and
+curators get tools to nominate, rank and review.
+
+**Fair play.** Every replay is re-checked before it counts: pauses cost a little, settings that make the game easier
+don't count, and anything that looks automated waits for a person to check it.
+
+**Star ratings and PP.** The start of it all: a star rating for every map based on how hard the cursor movement is,
+PP for every play, and a total that rewards great scores on many maps.
