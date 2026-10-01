@@ -5,10 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
-**Replays show the leaderboard.** While you watch a play, the map's leaderboard sits beside it with that play
-highlighted (press L to hide it). The play's speed and mods sit quietly under the grid, and the player's picture, rank
-and total show for a moment before the notes start. **Clean view** plays a replay full screen from the start with no
-buttons or mouse pointer, ready to record.
+**Misses count properly.** Every miss now costs something on its own, so a long map can't hide them. On a typical
+2,000-note map one miss keeps 98% of the play, five keep 92% and twenty keep 77% (before, twenty misses still kept
+94%). A full combo is always clearly worth the most, and a one-miss play on a hard map is still a great play. Every
+play was re-scored. Hard Rock is now rated at 1.35× the stars.
+
+**Replays show the leaderboard.** While you watch a play, the map's leaderboard sits beside it. The play you're
+watching starts from zero and climbs as it goes, passing the scores it beats, while everyone else shows their final
+result (press L to hide it). The play's speed and mods sit quietly under the grid.
 
 **For Nightly and Rewrite.** Community Ranked is one ranking shared by both Rhythia clients: Nightly (the final Sound
 Space Plus) and Rewrite. Submit a replay from either one (`%APPDATA%\SoundSpacePlus\replays` or

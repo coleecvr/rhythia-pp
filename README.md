@@ -73,7 +73,7 @@ top plays, keeps the ranked map list, and gives out roles as you climb.
   direction. Speed changes the map, so a play at 115% is rated on the map at 115%, and plays show their speed the way
   their game does (Nightly's `<` button is 87%).
 - **PP for a play** comes from the map's stars and your accuracy. A 5★ full combo is worth 100pp, harder maps are
-  worth much more, and each 1% of notes you miss costs about 6%.
+  worth much more. Every miss costs, and the gap to a full combo grows steadily, so long maps don't hide misses.
 - **Your total** adds up your best play on each ranked map: your best counts in full, the next 95%, then about 90%,
   and so on.
 
