@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**See where your nominated maps stand.** After you suggest a map with `/nominate`, the new `/nominations` command shows each one as waiting for the curators, ranked, or not ranked.
+
+**Weekly roundups, kept.** Every Monday roundup is now saved on the website, so you can look back at the best plays, top players and map of the week from past weeks. The first one appears after next Monday's roundup.
+
 **A real roadmap.** The Roadmap tab now shows what we're working on, what's next and what's finished, with a priority and a rough size on each item. It's kept up to date from one list, so it always matches what we're actually doing.
 
 **Compare two players.** Pick any two players, on the website or with `/compare` in Discord, and see the maps you've both played, who's ahead on each, and the biggest gaps.
