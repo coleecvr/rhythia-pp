@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**A Stats page.** The website has a new Stats tab: how many plays were submitted each week, how many players joined, and how Nightly and Rewrite compare.
+
+**A heads-up when the formula changes.** If the PP formula is ever updated, every play is re-scored and the bot now posts a short note in #announcements saying so, with the biggest rank changes, so it never comes as a surprise.
+
 **A roadmap on the website.** There's a new Roadmap tab showing what's finished, what we're working on now, what's next, and what we've decided not to do.
 
 **Double-tapping /submit is handled.** If `/submit` is sent twice at the same moment with the same replay, the play counts once and the second try now says "You already submitted this replay" instead of showing an error.
