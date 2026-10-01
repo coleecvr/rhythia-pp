@@ -5,6 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**A real roadmap.** The Roadmap tab now shows what we're working on, what's next and what's finished, with a priority and a rough size on each item. It's kept up to date from one list, so it always matches what we're actually doing.
+
+**Compare two players.** Pick any two players, on the website or with `/compare` in Discord, and see the maps you've both played, who's ahead on each, and the biggest gaps.
+
+**Map of the week.** The Monday roundup now spotlights one ranked map from the challenge sheet, so each gets its turn.
+
+**Filter maps by stars.** The Maps page has new buttons to narrow the list to under 3★, 3–5★, 5–7★ or 7★+.
+
 **A Stats page.** The website has a new Stats tab: how many plays were submitted each week, how many players joined, and how Nightly and Rewrite compare.
 
 **A heads-up when the formula changes.** If the PP formula is ever updated, every play is re-scored and the bot now posts a short note in #announcements saying so, with the biggest rank changes, so it never comes as a surprise.
