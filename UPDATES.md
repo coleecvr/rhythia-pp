@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Clearer when a play doesn't count.** If a play isn't counted, the bot now tells you what to do about it: play it
+without pausing, get the current version of the map, use a ranked speed, and so on. If a play is held for a curator
+to check, there's nothing you need to do, and the bot now messages you once it's decided. `/submit` explains where
+to find replays and maps for both Nightly and Rewrite.
+
+**Safer behind the scenes.** Every day the leaderboard is backed up in full, including every replay, and each backup
+is checked. Any re-score can be undone. The bot also has sensible limits on how fast commands can be used, so one
+person can't slow it down for everyone.
+
 **PP re-weighed on real plays.** We went through real replays note by note to see where misses actually happen. They
 land on the hard parts of a map, mostly in short runs, so a few misses usually mean one tough section rather than a
 sloppy play. Misses now cost a little less: on a 1,000-note map an S (98%) keeps about three quarters of a full combo,
