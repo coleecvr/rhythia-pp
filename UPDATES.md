@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**The website, one tap away.** After a play counts, `/submit` now has buttons to watch your replay and open your
+page on the website. `/profile` has a Website button too, and `/help` and #welcome-rules link to the site. `/help` also
+lists `/nominate`, for suggesting maps for the ranked pool.
+
 **Clearer when a play doesn't count.** If a play isn't counted, the bot now tells you what to do about it: play it
 without pausing, get the current version of the map, use a ranked speed, and so on. If a play is held for a curator
 to check, there's nothing you need to do, and the bot now messages you once it's decided. `/submit` explains where
