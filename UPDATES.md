@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Replays show the leaderboard.** While you watch a play, the map's leaderboard sits beside it with that play
+highlighted (press L to hide it). The play's speed and mods sit quietly under the grid, and the player's picture, rank
+and total show for a moment before the notes start. **Clean view** plays a replay full screen from the start with no
+buttons or mouse pointer, ready to record.
+
 **For Nightly and Rewrite.** Community Ranked is one ranking shared by both Rhythia clients: Nightly (the final Sound
 Space Plus) and Rewrite. Submit a replay from either one (`%APPDATA%\SoundSpacePlus\replays` or
 `%APPDATA%\Rhythia\replays`) and it lands on the same leaderboards. Each play is judged by the rules of the game it
