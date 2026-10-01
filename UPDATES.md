@@ -5,6 +5,8 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**A dead tab removed.** The website had a Calculator tab that led to "Page not found". The calculator is only for the people running the bot, so the tab is gone from the public site.
+
 **See where your nominated maps stand.** After you suggest a map with `/nominate`, the new `/nominations` command shows each one as waiting for the curators, ranked, or not ranked.
 
 **Weekly roundups, kept.** Every Monday roundup is now saved on the website, so you can look back at the best plays, top players and map of the week from past weeks. The first one appears after next Monday's roundup.
