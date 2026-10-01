@@ -5,6 +5,13 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**PP re-weighed on real plays.** We went through real replays note by note to see where misses actually happen. They
+land on the hard parts of a map, mostly in short runs, so a few misses usually mean one tough section rather than a
+sloppy play. Misses now cost a little less: on a 1,000-note map an S (98%) keeps about three quarters of a full combo,
+an A (95%) about half and a B (90%) about a third. Every miss still costs something, and a full combo is still clearly
+worth the most. A 5★ full combo is now worth 120pp (it was 100), so totals are back where they're meant to be. Every
+play has been re-scored automatically.
+
 **Misses count properly.** Every miss now costs something on its own, so a long map can't hide them. On a typical
 2,000-note map one miss keeps 98% of the play, five keep 92% and twenty keep 77% (before, twenty misses still kept
 94%). A full combo is always clearly worth the most, and a one-miss play on a hard map is still a great play. Every
