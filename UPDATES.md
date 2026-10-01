@@ -5,6 +5,26 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
+**Failed attempts count.** Your play count, pass rate and most played maps include the runs you failed, not just the
+ones you submitted (the bot reads them from the game's replays folder), and passing a map after failing it ten times
+earns **Never Give Up**.
+
+**A health bar in replays,** under the grid, draining on misses and refilling on hits, just like in the game.
+
+**Log in with Discord on the website.** Your picture and name sit top right, with a bell for your notifications (new
+medals, verified plays, new #1s, rank changes), and a popup celebrates every medal you earn.
+
+**Live PP in replays.** The replay viewer counts PP as the play goes: up with every note, down with misses, ending at
+what the play was worth.
+
+**New player pages.** A banner (your Discord banner if you have one), your global and country rank with a rank graph,
+level, grade counts and a stats panel (play count, total hits, max combo, play time and more), plus your bio, best
+plays, #1s, recent plays, medals and history. Write your bio with `/bio`, and set your country with `/country` for
+country rankings.
+
+**70 medals with their own art.** Every medal has its own design and a line of flavour text. Hover one to see what it
+takes, when you earned it and how rare it is.
+
 **Unranked maps say so.** Wherever a play on an unranked map shows up (score cards, profiles, map pages, replays),
 it's marked UNRANKED instead of showing PP as if it counted, with what it would be worth set to the side.
 
