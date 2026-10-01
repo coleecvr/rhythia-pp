@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**The website tells you when the bot is offline.** The bot runs on one PC, so sometimes it's off. The website
+now notices: if it hasn't heard from the bot in a few hours, every page shows a note saying so, and new plays
+appear as soon as it's back.
+
 **The website, one tap away.** After a play counts, `/submit` now has buttons to watch your replay and open your
 page on the website. `/profile` has a Website button too, and `/help` and #welcome-rules link to the site. `/help` also
 lists `/nominate`, for suggesting maps for the ranked pool.
