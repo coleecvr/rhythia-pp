@@ -1,6 +1,6 @@
 <p align="center"><img src="images/banner.png" alt="Rhythia Community PP" width="760"></p>
 
-<h3 align="center">Community star ratings, PP and leaderboards for Sound Space Plus</h3>
+<h3 align="center">Community star ratings, PP and leaderboards for Rhythia: Nightly and Rewrite</h3>
 
 <p align="center">
   <a href="https://coleecvr.github.io/rhythia-pp/"><b>🌐 Open the website</b></a>
@@ -14,17 +14,20 @@
 
 ## What is this?
 
-[Sound Space Plus](https://github.com/David20122/sound-space-plus) is a free rhythm game where you steer a cursor into
-notes flying toward you. **Rhythia Community PP** gives it a community ranking: every map gets a **star rating**, every
-pass earns **PP** (performance points), and your best plays add up to your spot on the **leaderboard**.
+Rhythia is a free rhythm game where you steer a cursor into notes flying toward you. It has two open-source clients:
+**Nightly**, the latest and final Sound Space Plus ([Rhythia/sound-space-plus](https://github.com/Rhythia/sound-space-plus)),
+and **Rewrite**, the new client in active development ([Rhythia/Client](https://github.com/Rhythia/Client)).
+**Rhythia Community PP** gives both one shared, replay-backed ranking: every map gets a **star rating**, every pass
+earns **PP** (performance points), and your best plays add up to your spot on the **leaderboard**, whichever client you
+play on.
 
-It's made by a player, for players, and it isn't an official part of Sound Space Plus.
+It's made by a player, for players, and it isn't an official part of Rhythia.
 
 ## Getting on the leaderboard
 
-1. **Pass a ranked map** in Sound Space Plus.
-2. **Find the replay.** Paste `%APPDATA%\SoundSpacePlus\replays` into the File Explorer address bar and pick the
-   newest file for that map.
+1. **Pass a ranked map** in Nightly or Rewrite.
+2. **Find the replay.** Paste `%APPDATA%\SoundSpacePlus\replays` (Nightly) or `%APPDATA%\Rhythia\replays` (Rewrite)
+   into the File Explorer address bar and pick the newest file for that map.
 3. **Send it in the [Discord](https://discord.gg/YwrN6EmSZj):** run `/submit` and attach the replay.
 
 The bot checks the replay, scores it and shows your result. Your first play signs you up: your Discord account is
@@ -67,7 +70,8 @@ top plays, keeps the ranked map list, and gives out roles as you climb.
 ## How PP works, briefly
 
 - **Stars** measure how hard a map is to play: how far and how fast you have to move, and how sharply you change
-  direction. Speed mods make a map harder, so a 1.15× play is rated on the map at 1.15×.
+  direction. Speed changes the map, so a play at 115% is rated on the map at 115%, and plays show their speed the way
+  their game does (Nightly's `<` button is 87%).
 - **PP for a play** comes from the map's stars and your accuracy. A 5★ full combo is worth 100pp, harder maps are
   worth much more, and each 1% of notes you miss costs about 6%.
 - **Your total** adds up your best play on each ranked map: your best counts in full, the next 95%, then about 90%,
@@ -84,7 +88,8 @@ Suggestions are welcome in the Discord.
 
 ## Questions
 
-**Is this official?** No. It's a fan project for Sound Space Plus, not made by or affiliated with its developers.
+**Is this official?** No. It's a fan project for Rhythia's Nightly and Rewrite clients, not made by or affiliated with
+their developers.
 
 **Can anyone join?** Yes. Anyone can join the [Discord](https://discord.gg/YwrN6EmSZj) and use the bot there, and anyone can
 look at the website.

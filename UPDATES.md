@@ -5,8 +5,23 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**For Nightly and Rewrite.** Community Ranked is one ranking shared by both Rhythia clients: Nightly (the final Sound
+Space Plus) and Rewrite. Submit a replay from either one (`%APPDATA%\SoundSpacePlus\replays` or
+`%APPDATA%\Rhythia\replays`) and it lands on the same leaderboards. Each play is judged by the rules of the game it
+was played in.
+
+**Speeds the way your game says them.** Plays now show their speed in each game's own terms: Nightly's `<` button
+reads **< 87%** (it really is 1 ÷ 1.15, not 85%), and a Rewrite play at 90% reads **90%**. The numbers behind it were
+already right: the replays only line up with their maps at exactly those speeds. Map pages now rate each map at every
+speed button in both games.
+
+**Flashlight, Nearsighted and Hard Rock count.** Nightly plays with them now earn PP. Flashlight and Nearsighted add a
+bonus. Hard Rock is rated on the map the way it plays: notes spread out, the cursor reaching further and a tighter
+hit window, so its stars go up just like a faster speed. The replay viewer draws Hard Rock's bigger grid, and there's a
+medal for each one.
+
 **Grades that tell the story.** An SS (always a full combo) now shines with a rainbow rim, and an S just one miss from
-it turns silver. Set either with a mod that adds PP (Ghost, Strobe, Chaos, Vortex, Earthquake, or faster than 1×) and
+it turns silver. Set either with a mod that adds PP in the game it was played in, or faster than 100%, and
 it's **charged**: the grade glows on a dark tile with a spark. You'll see them on score cards, in Discord, on the
 website and in the replay viewer.
 
