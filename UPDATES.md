@@ -5,9 +5,8 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## September 2026: launch
 
-**Failed attempts count.** Your play count, pass rate and most played maps include the runs you failed, not just the
-ones you submitted (the bot reads them from the game's replays folder), and passing a map after failing it ten times
-earns **Never Give Up**.
+**Every attempt counts.** Your play count and most played maps include every run, not just the ones you submitted
+(the bot reads them from the game's replays folder), and passing a map after ten attempts at it earns **Never Give Up**.
 
 **A health bar in replays,** under the grid, draining on misses and refilling on hits, just like in the game.
 
