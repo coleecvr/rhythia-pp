@@ -3,6 +3,13 @@
 The latest changes to Rhythia Community PP, newest first. Updates are announced in the [Discord](https://discord.gg/YwrN6EmSZj)
 too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the newest version.
 
+## October 2026
+
+**Grades that tell the story.** An SS (always a full combo) now shines with a rainbow rim, and an S just one miss from
+it turns silver. Set either with a mod that adds PP (Ghost, Strobe, Chaos, Vortex, Earthquake, or faster than 1×) and
+it's **charged**: the grade glows on a dark tile with a spark. You'll see them on score cards, in Discord, on the
+website and in the replay viewer.
+
 ## September 2026: launch
 
 **Every attempt counts.** Your play count and most played maps include every run, not just the ones you submitted
