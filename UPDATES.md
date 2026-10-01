@@ -5,6 +5,8 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**A roadmap on the website.** There's a new Roadmap tab showing what's finished, what we're working on now, what's next, and what we've decided not to do.
+
 **Double-tapping /submit is handled.** If `/submit` is sent twice at the same moment with the same replay, the play counts once and the second try now says "You already submitted this replay" instead of showing an error.
 
 **Easier to read and use.** The website's buttons have stronger contrast, and charts, search boxes and tables are
