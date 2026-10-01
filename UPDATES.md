@@ -5,6 +5,8 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Double-tapping /submit is handled.** If `/submit` is sent twice at the same moment with the same replay, the play counts once and the second try now says "You already submitted this replay" instead of showing an error.
+
 **Easier to read and use.** The website's buttons have stronger contrast, and charts, search boxes and tables are
 labelled for screen readers. Player pages no longer show "No country set" to visitors.
 
