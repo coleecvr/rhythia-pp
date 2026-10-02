@@ -7,6 +7,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 **A clearer way in.** The home page now links straight to the submit steps (and so does every empty podium spot). The Submit page is a proper how-to: which maps count, where to run `/submit`, what to do if the bot doesn't know your map, and what the bot's reply means. The website's login button is quieter, because signing up is your first `/submit` in the Discord, not a login here. On a phone the header is two tidy rows instead of three.
 
+**Easier on a phone.** Rows that scroll sideways (the tabs, a player's sections, wide tables) fade where they continue, and a play's details wrap instead of being cut off. A wrong or old link now says what wasn't found and where to go, a page that fails to load offers a retry, and screen readers hear the new page's title instead of the whole page. Maps show two to a row on a phone with a "Show more" button instead of all 518 at once.
+
+**In the Discord,** the welcome post and `/help` point to the website's Maps page for the list of ranked maps, and a play on an unranked map says how to nominate it. A play held for review no longer shows the reason in the public channel: a curator simply checks it by hand.
+
+**Small fixes.** The failed-run card's caption no longer runs into the grade; a profile with no ranked plays yet shows dashes and a hint instead of zeros; retrying one map many times is one row in your Recent list, not ten; and a new `/optout` lets you take yourself off the public lists (and `/optin` brings you back).
+
 **Safer behind the scenes.** Backups and restores check themselves better, updates that fail their tests are undone, and player names such as "Con" can no longer trip up the website on Windows.
 
 **Failed runs say "Failed".** A run you failed or quit partway through used to be labelled "Rejected", which made it sound like it had been refused. It now says "Failed" on the website and in Discord. "Rejected" is only for plays that break a rule. Failed runs still don't earn PP, and they still count as attempts.
