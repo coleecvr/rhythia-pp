@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 5.** Three phone fixes from a walk through the site: the compare page's shared-maps table now fits the screen
+with both players' PP side by side, a map page's two rows of speed buttons stay inside the header and swipe sideways
+(Nightly's fastest speeds were off the edge before), and the week labels under the stats page's chart are a readable
+size. A link to a map, player or play that has been removed now lands on a page that says so, instead of the home page
+with no word.
+
 **Patch 4.** The replay viewer's music now stays in step with the notes after an intro skip, a pause or a drag of the
 timeline: some MP3 songs used to land up to half a second off, and now every one lands where it should. On a phone, full
 screen now centres the play with the board under it instead of leaving the bottom half empty, and a map whose title is
