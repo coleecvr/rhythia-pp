@@ -5,6 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 4.** The replay viewer's music now stays in step with the notes after an intro skip, a pause or a drag of the
+timeline: some MP3 songs used to land up to half a second off, and now every one lands where it should. On a phone, full
+screen now centres the play with the board under it instead of leaving the bottom half empty, and a map whose title is
+one very long word no longer stretches the replay page past the edge of the screen. The challenge-sheet page has a
+search box and shows 20 maps per tier with "Show more" instead of all 500 at once, and on a phone its maps are rows like
+the leaderboards. Behind the scenes, the owner's replay-clock command now also checks a replay's clock against the play
+itself.
+
 **Patch 3.** The next look is the site. Everything Patch 2 let you preview with `?look=new` is now simply what everyone
 sees: quieter ranks, medals that say what they take, one style across the player, map and ranking pages, and a proper
 phone layout. The switch and the "preview" chip are gone. On top of that, the website's ranks and every leaderboard and
