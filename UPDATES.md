@@ -13,7 +13,9 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 **Small fixes.** The failed-run card's caption no longer runs into the grade; a profile with no ranked plays yet shows dashes and a hint instead of zeros; retrying one map many times is one row in your Recent list, not ten; and a new `/optout` lets you take yourself off the public lists (and `/optin` brings you back).
 
-**Safer behind the scenes.** Backups and restores check themselves better, updates that fail their tests are undone, and player names such as "Con" can no longer trip up the website on Windows.
+**Refusals are private.** If the bot turns a play down and the reason names someone else (a copied replay, or a PC that belongs to another player), only you see it now, not the whole channel. The "thinking…" message goes away too.
+
+**Safer behind the scenes.** Backups and restores check themselves better (and one locked file no longer stops the daily backup), updates that fail their tests are undone and the bot says why, and player names such as "Con" can no longer trip up the website on Windows. Replays that list a modifier twice, or are crafted to crash or slow the bot, are refused, and banned players no longer count in the public totals.
 
 **Failed runs say "Failed".** A run you failed or quit partway through used to be labelled "Rejected", which made it sound like it had been refused. It now says "Failed" on the website and in Discord. "Rejected" is only for plays that break a rule. Failed runs still don't earn PP, and they still count as attempts.
 
