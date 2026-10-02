@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 3.** The next look is the site. Everything Patch 2 let you preview with `?look=new` is now simply what everyone
+sees: quieter ranks, medals that say what they take, one style across the player, map and ranking pages, and a proper
+phone layout. The switch and the "preview" chip are gone. On top of that, the website's ranks and every leaderboard and
+play list now follow the replay viewer's board: a plain `#1`, each row its own card, the name with a quieter second line
+(accuracy, plays, the map), and the PP on the right.
+
 **Patch 2.** A day of audits turned into fixes across the bot, the website and the replay viewer, and the website's next
 look can be previewed. In this patch:
 
