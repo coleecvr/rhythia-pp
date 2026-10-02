@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**A clearer way in.** The home page now links straight to the submit steps (and so does every empty podium spot). The Submit page is a proper how-to: which maps count, where to run `/submit`, what to do if the bot doesn't know your map, and what the bot's reply means. The website's login button is quieter, because signing up is your first `/submit` in the Discord, not a login here. On a phone the header is two tidy rows instead of three.
+
+**Safer behind the scenes.** Backups and restores check themselves better, updates that fail their tests are undone, and player names such as "Con" can no longer trip up the website on Windows.
+
 **Failed runs say "Failed".** A run you failed or quit partway through used to be labelled "Rejected", which made it sound like it had been refused. It now says "Failed" on the website and in Discord. "Rejected" is only for plays that break a rule. Failed runs still don't earn PP, and they still count as attempts.
 
 **A dead tab removed.** The website had a Calculator tab that led to "Page not found". The calculator is only for the people running the bot, so the tab is gone from the public site.
