@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 6.** On a phone, the replay viewer's song now loads when you press play. It used to sit on "Loading the song"
+with no sound, because a phone's browser only starts a song after a tap. If it is still waiting, the page now says so and
+offers a "Load the song" button. Medal texts now say that a medal's stars are the stars of your play, so speed and Hard
+Rock count: a 3★ map played faster can earn a 4★ medal, which is how it has always worked.
+
 **Patch 5.** Three phone fixes from a walk through the site: the compare page's shared-maps table now fits the screen
 with both players' PP side by side, a map page's two rows of speed buttons stay inside the header and swipe sideways
 (Nightly's fastest speeds were off the edge before), and the week labels under the stats page's chart are a readable
