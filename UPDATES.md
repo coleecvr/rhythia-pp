@@ -5,98 +5,36 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
-**A clearer way in.** The home page now links straight to the submit steps (and so does every empty podium spot). The Submit page is a proper how-to: which maps count, where to run `/submit`, what to do if the bot doesn't know your map, and what the bot's reply means. The website's login button is quieter, because signing up is your first `/submit` in the Discord, not a login here. On a phone the header is two tidy rows instead of three.
+**Patch 1.** The first release under the new way of shipping: finished work now gathers up and goes out together, so the
+bot restarts once per patch instead of after every change, and a patch is live within about a minute of being released,
+with one line in the server's log channel that follows it from "noticed" to "live". In this patch:
 
-**Easier on a phone.** Rows that scroll sideways (the tabs, a player's sections, wide tables) fade where they continue, and a play's details wrap instead of being cut off. A wrong or old link now says what wasn't found and where to go, a page that fails to load offers a retry, and screen readers hear the new page's title instead of the whole page. Maps show two to a row on a phone with a "Show more" button instead of all 518 at once.
+- A map uploaded under a challenge-sheet map's ID is ranked only once the bot has checked it against the sheet's own
+  file, so nobody can slip a different chart in under a ranked map's name. The bot's replies say what it is waiting for.
+- Every play held for review gets a card with the approve and reject buttons, including plays moved to review by a
+  rules change, with a catch-up at start and every hour.
+- The website: the stats tiles read "1 player" and "1 new player this week" instead of "1 players"; the level on a
+  player page has a label and says how far to the next one; no empty space where the rank graph will be until there are
+  two days of history; every Top plays row has its watch button on a phone too; the Maps filters, the search and the pool
+  filter keep their state while the page refreshes with new data.
+- The replay viewer's staff-only controls (the player intro and Clean view) are hidden from everyone else, as intended.
+- The bot's status command no longer shows "null" on its updates line right after an update.
 
-**In the Discord,** the welcome post and `/help` point to the website's Maps page for the list of ranked maps, and a play on an unranked map says how to nominate it. A play held for review no longer shows the reason in the public channel: a curator simply checks it by hand.
+**A clearer way in.** The home page now links straight to the submit steps (and so does every empty podium spot), the
+Submit page is a proper how-to: which maps count, where to run `/submit`, what to do if the bot doesn't know your map,
+and what the bot's reply means. The website's login button is quieter, because signing up is your first `/submit` in
+the Discord, not a login here. On a phone the header is two tidy rows instead of three.
 
-**Small fixes.** The failed-run card's caption no longer runs into the grade; a profile with no ranked plays yet shows dashes and a hint instead of zeros; retrying one map many times is one row in your Recent list, not ten; and a new `/optout` lets you take yourself off the public lists (and `/optin` brings you back).
+**Easier on a phone.** Rows that scroll sideways (the tabs, a player's sections, wide tables) fade where they continue,
+and a play's details wrap instead of being cut off. A wrong or old link now says what wasn't found and where to go, a
+page that fails to load offers a retry, and screen readers hear the new page's title instead of the whole page.
 
-**Refusals are private.** If the bot turns a play down and the reason names someone else (a copied replay, or a PC that belongs to another player), only you see it now, not the whole channel. The "thinking…" message goes away too.
+**In the Discord,** the welcome post and `/help` point to the website's Maps page for the list of ranked maps, and a
+play on an unranked map says how to nominate it.
 
-**Safer behind the scenes.** Backups and restores check themselves better (and one locked file no longer stops the daily backup), updates that fail their tests are undone and the bot says why, and player names such as "Con" can no longer trip up the website on Windows. Replays that list a modifier twice, or are crafted to crash or slow the bot, are refused, and banned players no longer count in the public totals.
-
-**Failed runs say "Failed".** A run you failed or quit partway through used to be labelled "Rejected", which made it sound like it had been refused. It now says "Failed" on the website and in Discord. "Rejected" is only for plays that break a rule. Failed runs still don't earn PP, and they still count as attempts.
-
-**A dead tab removed.** The website had a Calculator tab that led to "Page not found". The calculator is only for the people running the bot, so the tab is gone from the public site.
-
-**See where your nominated maps stand.** After you suggest a map with `/nominate`, the new `/nominations` command shows each one as waiting for the curators, ranked, or not ranked.
-
-**Weekly roundups, kept.** Every Monday roundup is now saved on the website, so you can look back at the best plays, top players and map of the week from past weeks. The first one appears after next Monday's roundup.
-
-**A real roadmap.** The Roadmap tab now shows what we're working on, what's next and what's finished, with a priority and a rough size on each item. It's kept up to date from one list, so it always matches what we're actually doing.
-
-**Compare two players.** Pick any two players, on the website or with `/compare` in Discord, and see the maps you've both played, who's ahead on each, and the biggest gaps.
-
-**Map of the week.** The Monday roundup now spotlights one ranked map from the challenge sheet, so each gets its turn.
-
-**Filter maps by stars.** The Maps page has new buttons to narrow the list to under 3★, 3–5★, 5–7★ or 7★+.
-
-**A Stats page.** The website has a new Stats tab: how many plays were submitted each week, how many players joined, and how Nightly and Rewrite compare.
-
-**A heads-up when the formula changes.** If the PP formula is ever updated, every play is re-scored and the bot now posts a short note in #announcements saying so, with the biggest rank changes, so it never comes as a surprise.
-
-**A roadmap on the website.** There's a new Roadmap tab showing what's finished, what we're working on now, what's next, and what we've decided not to do.
-
-**Double-tapping /submit is handled.** If `/submit` is sent twice at the same moment with the same replay, the play counts once and the second try now says "You already submitted this replay" instead of showing an error.
-
-**Easier to read and use.** The website's buttons have stronger contrast, and charts, search boxes and tables are
-labelled for screen readers. Player pages no longer show "No country set" to visitors.
-
-**The website tells you when the bot is offline.** The bot runs on one PC, so sometimes it's off. The website
-now notices: if it hasn't heard from the bot in a few hours, every page shows a note saying so, and new plays
-appear as soon as it's back.
-
-**The website, one tap away.** After a play counts, `/submit` now has buttons to watch your replay and open your
-page on the website. `/profile` and `/map` have Website buttons too, every new #1 in #top-plays can be watched with
-one tap, and `/help` and #welcome-rules link to the site. `/help` also
-lists `/nominate`, for suggesting maps for the ranked pool.
-
-**Clearer when a play doesn't count.** If a play isn't counted, the bot now tells you what to do about it: play it
-without pausing, get the current version of the map, use a ranked speed, and so on. If a play is held for a curator
-to check, there's nothing you need to do, and the bot now messages you once it's decided. `/submit` explains where
-to find replays and maps for both Nightly and Rewrite.
-
-**Safer behind the scenes.** Every day the leaderboard is backed up in full, including every replay, and each backup
-is checked. Any re-score can be undone. The bot also has sensible limits on how fast commands can be used, so one
-person can't slow it down for everyone.
-
-**PP re-weighed on real plays.** We went through real replays note by note to see where misses actually happen. They
-land on the hard parts of a map, mostly in short runs, so a few misses usually mean one tough section rather than a
-sloppy play. Misses now cost a little less: on a 1,000-note map an S (98%) keeps about three quarters of a full combo,
-an A (95%) about half and a B (90%) about a third. Every miss still costs something, and a full combo is still clearly
-worth the most. A 5★ full combo is now worth 120pp (it was 100), so totals are back where they're meant to be. Every
-play has been re-scored automatically.
-
-**Misses count properly.** Every miss now costs something on its own, so a long map can't hide them. On a typical
-2,000-note map one miss keeps 98% of the play, five keep 92% and twenty keep 77% (before, twenty misses still kept
-94%). A full combo is always clearly worth the most, and a one-miss play on a hard map is still a great play. Every
-play was re-scored. Hard Rock is now rated at 1.35× the stars.
-
-**Replays show the leaderboard.** While you watch a play, the map's leaderboard sits beside it. The play you're
-watching starts from zero and climbs as it goes, passing the scores it beats, while everyone else shows their final
-result (press L to hide it). The play's speed and mods sit quietly under the grid.
-
-**For Nightly and Rewrite.** Community Ranked is one ranking shared by both Rhythia clients: Nightly (the final Sound
-Space Plus) and Rewrite. Submit a replay from either one (`%APPDATA%\SoundSpacePlus\replays` or
-`%APPDATA%\Rhythia\replays`) and it lands on the same leaderboards. Each play is judged by the rules of the game it
-was played in.
-
-**Speeds the way your game says them.** Plays now show their speed in each game's own terms: Nightly's `<` button
-reads **< 87%** (it really is 1 ÷ 1.15, not 85%), and a Rewrite play at 90% reads **90%**. The numbers behind it were
-already right: the replays only line up with their maps at exactly those speeds. Map pages now rate each map at every
-speed button in both games.
-
-**Flashlight, Nearsighted and Hard Rock count.** Nightly plays with them now earn PP. Flashlight and Nearsighted add a
-bonus. Hard Rock is rated on the map the way it plays: notes spread out, the cursor reaching further and a tighter
-hit window, so its stars go up just like a faster speed. The replay viewer draws Hard Rock's bigger grid, and there's a
-medal for each one.
-
-**Grades that tell the story.** An SS (always a full combo) now shines with a rainbow rim, and an S just one miss from
-it turns silver. Set either with a mod that adds PP in the game it was played in, or faster than 100%, and
-it's **charged**: the grade glows on a dark tile with a spark. You'll see them on score cards, in Discord, on the
-website and in the replay viewer.
+**Small fixes.** Maps show two to a row on a phone with a "Show more" button instead of all 518 at once; the failed-run
+card's caption no longer runs into the grade; a profile with no ranked plays yet shows dashes and a hint instead of
+zeros; and retrying one map many times is one row in your Recent list, not ten.
 
 ## September 2026: launch
 
