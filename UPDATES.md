@@ -5,6 +5,44 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 2.** A day of audits turned into fixes across the bot, the website and the replay viewer, and the website's next
+look can be previewed. In this patch:
+
+- **A preview of the next look.** Add `?look=new` to any page's address to see the website's next design in your browser
+  (it remembers; `?look=classic` turns it back). Ranks are quieter pills, every medal says what it takes and each group
+  shows its progress, the player, map and ranking pages share one style, and on a phone the leaderboards read as rows
+  instead of a table you scroll sideways. Nothing changes for anyone who doesn't ask for it.
+- **The replay viewer on a phone.** The full-screen button works where the browser has no full screen of its own (the
+  viewer fills the window itself; Escape or the back button leaves), the side leaderboard becomes a compact board under
+  the play, and the header's player search folds behind a magnifier button. On every screen the HUD now follows the play
+  gently instead of every cursor move, with a brief stronger reaction to a miss or a new combo level, and a replay you
+  leave while its song is still loading stops cleanly.
+- **Profiles and rankings.** A play's PP stands on its own and the small line says what it adds to your total; a medal's
+  card opens on the first tap on a phone; the Rankings page reaches every player, 100 at a time, and the country filter
+  looks at all of them; a page that loads late no longer draws over the page you moved to; a peak rank is never worse
+  than the rank now; a public profile says only how many plays are waiting for a curator, not which.
+- **Replay checking is stricter and fairer.** Honest mirrored (HFlip or VFlip) plays pass, and a tiny map no longer
+  refuses a play over one stray hit: it waits for a curator instead.
+- **Submitting.** A refused first `/submit` leaves nothing behind, so there is no empty profile; a legacy replay of
+  another version of the map says so; `/submit` adds a map only after the play passes its first checks; a sheet map
+  waiting for its check is explained in plain words.
+- **Bot and curators.** Curator commands answer at once and act only on one clear map (several matches are listed, and
+  nothing changes); the weekly roundup catches up after the PC was off and the map of the week stays put; a damaged map
+  or replay file says why; banned or opted-out players get the right answers; a short network blip no longer undoes an
+  update, and a replacement that stops at start is undone with the old one carrying on. A zip with the same map in two
+  folders adds both, a download that stalls or runs past the size limit is given up and says why, hidden characters
+  leave map titles, and a review card left from before a restore says it is out of date instead of acting on another play.
+- **Hardening.** The bot handles odd or oversized files and links more safely, its own web server does far less work
+  per request, and a change to a play or a player (a ban, an approval, a re-score, a rename) shows on its replay page
+  at once.
+- **Behind the scenes.** The check that keeps the rating code and its second copy in step now covers many more kinds of
+  chart and play, and a new command lets the owner measure how a replay's clock runs, for tracking down a viewer that
+  drifts from its music.
+- **Small fixes.** The "What counts" help is built from the mod rules so the two can't disagree; a shared Rewrite replay
+  carries no in-game name (replay files published before this lose it too); the live PP curve ends at the play's PP;
+  maps on an older rating version are re-rated; and a #1 medal moves on to the next player when its holder leaves the
+  lists.
+
 **Patch 1.** The first release under the new way of shipping: finished work now gathers up and goes out together, so the
 bot restarts once per patch instead of after every change, and a patch is live within about a minute of being released,
 with one line in the server's log channel that follows it from "noticed" to "live". In this patch:
