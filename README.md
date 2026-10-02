@@ -25,13 +25,15 @@ It's made by a player, for players, and it isn't an official part of Rhythia.
 
 ## Getting on the leaderboard
 
-1. **Pass a ranked map** in Nightly or Rewrite.
-2. **Find the replay.** Paste `%APPDATA%\SoundSpacePlus\replays` (Nightly) or `%APPDATA%\Rhythia\replays` (Rewrite)
-   into the File Explorer address bar and pick the newest file for that map.
-3. **Send it in the [Discord](https://discord.gg/YwrN6EmSZj):** run `/submit` and attach the replay.
+1. **Pass a ranked map** in Nightly or Rewrite. Curators choose them; the website's Maps page lists them.
+2. **Find the replay.** On Windows, paste `%APPDATA%\SoundSpacePlus\replays` (Nightly) or `%APPDATA%\Rhythia\replays`
+   (Rewrite) into the File Explorer address bar and pick the newest file for that map.
+3. **Send it in the [Discord](https://discord.gg/YwrN6EmSZj):** in the bot commands channel, run `/submit` and attach the replay.
+   If the bot doesn't know the map, run it again with the map file in the **map** option.
 
-The bot checks the replay, scores it and shows your result. Your first play signs you up: your Discord account is
-your leaderboard account. The website catches up within a few minutes.
+The bot replies with a card: verified (your PP and new rank), held for review (a curator checks it and the bot messages
+you), or not counted, with why and what to do. Your first play signs you up: your Discord account is your leaderboard
+account. The website catches up a minute or two later.
 
 ## The website
 
@@ -43,6 +45,10 @@ your leaderboard account. The website catches up within a few minutes.
   <tr>
     <td width="50%"><img src="images/player.jpg" alt="A player page"><br><b>Player pages</b> with rank history, best plays and recent plays.</td>
     <td width="50%"><img src="images/replay.jpg" alt="The replay viewer"><br><b>Watch any play</b> in a replay viewer that looks like the game. Add your copy of the map to hear the song.</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/stats.jpg" alt="The community stats page"><br><b>Community stats</b>: plays and players by week, and by client.</td>
+    <td width="50%"><img src="images/roadmap.jpg" alt="The roadmap page"><br><b>The roadmap</b>: what is being worked on, what comes next, and what is already live.</td>
   </tr>
 </table>
 
@@ -72,7 +78,7 @@ top plays, keeps the ranked map list, and gives out roles as you climb.
 - **Stars** measure how hard a map is to play: how far and how fast you have to move, and how sharply you change
   direction. Speed changes the map, so a play at 115% is rated on the map at 115%, and plays show their speed the way
   their game does (Nightly's `<` button is 87%).
-- **PP for a play** comes from the map's stars and your accuracy. A 5★ full combo is worth 100pp, harder maps are
+- **PP for a play** comes from the map's stars and your accuracy. A 5★ full combo is worth 120pp, harder maps are
   worth much more. Every miss costs, and the gap to a full combo grows steadily, so long maps don't hide misses.
 - **Your total** adds up your best play on each ranked map: your best counts in full, the next 95%, then about 90%,
   and so on.
