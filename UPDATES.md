@@ -5,6 +5,8 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Failed runs say "Failed".** A run you failed or quit partway through used to be labelled "Rejected", which made it sound like it had been refused. It now says "Failed" on the website and in Discord. "Rejected" is only for plays that break a rule. Failed runs still don't earn PP, and they still count as attempts.
+
 **A dead tab removed.** The website had a Calculator tab that led to "Page not found". The calculator is only for the people running the bot, so the tab is gone from the public site.
 
 **See where your nominated maps stand.** After you suggest a map with `/nominate`, the new `/nominations` command shows each one as waiting for the curators, ranked, or not ranked.
