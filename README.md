@@ -92,6 +92,40 @@ a person to check, never banned automatically.
 Only **ranked** maps give PP, and curators choose them, including picks from the community challenge sheet.
 Suggestions are welcome in the Discord.
 
+## For people building tools
+
+The [website](https://coleecvr.github.io/rhythia-pp/) is a plain static site, and everything it shows comes from JSON files you can read too, at
+`https://coleecvr.github.io/rhythia-pp/data/<name>.json`. They are updated about every five minutes. Please keep it gentle: fetch a file when you
+need it, cache it, and do not poll faster than that. These files are a courtesy, not a promised interface, so the shape
+can change when the site does. Write your tool so it copes with a missing or new field.
+
+| File | What is in it |
+|---|---|
+| `stats.json` | Totals: players, ranked maps, scores, plays waiting for review, when it was last updated |
+| `leaderboard.json` | The ranking: rank, name, PP, accuracy, number of plays, avatar, country |
+| `players.json` | A short list of every player for search: name, avatar, rank, PP, plays, country |
+| `players/<name>.json` | One player: rank and PP, best and recent plays, history, medals, stats, bio |
+| `maps.json` | Every map: title, artist, mapper, difficulty, notes, length, star rating, status, number of players, top PP |
+| `maps/<id>.json` | One map: the same, plus its leaderboard, star rating at each speed and a pattern summary |
+| `top-plays.json` | The best plays: player, map, speed, mods, hits, misses, accuracy, PP |
+| `feed.json` | The latest plays and maps |
+| `activity.json` | Plays per week and how many players use each client (Nightly, Rewrite) |
+| `pool.json` | Where the community challenge sheet's maps stand (ranked, waiting, missing) |
+| `roundups.json` | The weekly roundups |
+| `replays/<id>.json` and `replay-files/<id>.*` | A play's replay as the website's viewer reads it (cursor path, notes, hit results), and the replay file itself |
+
+A few things to know:
+
+- **What is never in them:** why a play was held back, any curator notes, Discord account numbers, tokens, or the
+  formula behind the PP. You get the numbers (a play's PP, a map's stars), not how they are worked out.
+- **Songs are somebody's work.** The website has a map's song only where a curator said it may be shared, and then only
+  that song, as `songs/<map id>.<type>`. Please do not copy or re-host them.
+- **Players can opt out.** If a name is not there, the player may have chosen that. Please respect it.
+- **Being kind to the players:** these are people's names and plays. Use them to make something useful for the community,
+  and not to build a list of anyone's activity.
+
+Not affiliated with the game's developers. Questions about a tool or a missing field are welcome in the [Discord](https://discord.gg/YwrN6EmSZj).
+
 ## Questions
 
 **Is this official?** No. It's a fan project for Rhythia's Nightly and Rewrite clients, not made by or affiliated with
