@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 10.** The website's Rankings page now lists every ranked player, not only the first thousand. The replay viewer's
+song panel now says that a curator can share a map's song so it plays for everyone, so you know to ask in the Discord.
+Behind the scenes, the bot's own web server is stricter with other computers and websites: they can no longer register
+players or send plays through it (Discord's /submit is unchanged). Nothing about PP or ratings changes.
+
 **Patch 9.** The replay viewer has a new setting, Audio offset, under Viewer options. A phone's speaker or Bluetooth earbuds
 can play the music a fraction of a second late, and the page cannot see that. Move the slider to the right until the music
 matches the notes (to the left if it sounds early); hit sounds move with it, and it is kept in your browser. It starts at 0,
