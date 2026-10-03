@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 9.** The replay viewer has a new setting, Audio offset, under Viewer options. A phone's speaker or Bluetooth earbuds
+can play the music a fraction of a second late, and the page cannot see that. Move the slider to the right until the music
+matches the notes (to the left if it sounds early); hit sounds move with it, and it is kept in your browser. It starts at 0,
+and the right number is different for every phone and pair of earbuds, so you find it by ear.
+
 **Patch 8.** On a phone, a song should now stay in step with the notes after a skip, a pause or a drag of the timeline,
 including songs a phone could not seek exactly before (variable-bitrate MP3s). The site also publishes a few plain
 numbers about its songs and replays (sizes, lengths, the kind of bitrate; no names or sound) so we can see why a song
