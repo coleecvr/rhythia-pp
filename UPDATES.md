@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 8.** On a phone, a song should now stay in step with the notes after a skip, a pause or a drag of the timeline,
+including songs a phone could not seek exactly before (variable-bitrate MP3s). The site also publishes a few plain
+numbers about its songs and replays (sizes, lengths, the kind of bitrate; no names or sound) so we can see why a song
+sounds off. Curators' help list now includes the commands for sharing a map's song.
+
 **Patch 7.** The website no longer lists players' Discord account numbers: "Log in with Discord" still finds you, and
 profile pictures and banners are now kept on the site itself. Curators can now choose to share the song of a map, so the
 replay viewer can play it by itself for maps that had no music before (a map only gets a song when a curator says so). On
