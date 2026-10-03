@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 7.** The website no longer lists players' Discord account numbers: "Log in with Discord" still finds you, and
+profile pictures and banners are now kept on the site itself. Curators can now choose to share the song of a map, so the
+replay viewer can play it by itself for maps that had no music before (a map only gets a song when a curator says so). On
+a phone, a long map title in the replay viewer is cut short instead of running under the exit button, and the bot's
+profile text now names both clients, Nightly and Rewrite, like the website.
+
 **Patch 6.** On a phone, the replay viewer's song now loads when you press play. It used to sit on "Loading the song"
 with no sound, because a phone's browser only starts a song after a tap. If it is still waiting, the page now says so and
 offers a "Load the song" button. Medal texts now say that a medal's stars are the stars of your play, so speed and Hard
