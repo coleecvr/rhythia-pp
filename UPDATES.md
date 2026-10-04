@@ -5,6 +5,13 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 17.** The bot is harder to knock over by odd files and text sent from outside. A map file with a huge list of
+mappers, an oversized cover, or an odd map name can no longer slow it down, a replay that was waiting for its map is
+read again once the map arrives, merging two accounts keeps the bio, country, banner, colour and any ban, a brand-new
+player's second /submit no longer fails because the first was refused, and a library file that was busy for a moment is
+retried. Map or profile text that looks like a Discord picture address can no longer make the site copy and publish a
+picture. Nothing about PP or ratings changes.
+
 **Patch 16.** The website is easier to read and use: the footer text is clearer, links in tables are underlined, buttons
 are easier to tap on a phone, and keyboard users can see where they are. Pages now rise in gently when you open them,
 buttons give a little when pressed, the big numbers on the home, stats and player pages count up, and map cards ease
