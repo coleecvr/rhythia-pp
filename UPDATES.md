@@ -5,6 +5,14 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 18.** The bot looks after its data better. Just before each update installs, it now saves a copy of the
+leaderboard first and keeps the newest five, a backup that fails is mentioned once instead of every hour, and a
+snapshot that fails no longer replaces the good one from earlier in the day. Checking a backup by name now works, the
+spreadsheet export keeps odd map names as plain text, and publishing the website refuses to run against a missing or
+wrong database instead of replacing the site with an empty one. A first website build that stopped half way no longer
+blocks the next one. On a player page, the latest medals now catch the light once, one after another, when the page
+opens (not for anyone who asks for less motion). Nothing about PP or ratings changes.
+
 **Patch 17.** The bot is harder to knock over by odd files and text sent from outside. A map file with a huge list of
 mappers, an oversized cover, or an odd map name can no longer slow it down, a replay that was waiting for its map is
 read again once the map arrives, merging two accounts keeps the bio, country, banner, colour and any ban, a brand-new
