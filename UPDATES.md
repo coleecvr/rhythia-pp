@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 13.** The website looks calmer and plainer: flatter cards, simpler headings and a simpler home page, and the
+roadmap page now shows what players get, in plain words. The Discord bot draws grades with the same letters as the
+replay viewer, and every medal now has a name that says what it asks for, such as "2★ Pass". Nothing about PP or ratings
+changes, and nobody gains or loses a medal.
+
 **Patch 12.** The replay viewer's on-screen panels (grade, accuracy, combo, progress and health) now hold still while the
 camera follows your cursor, instead of bouncing around. On the website, grade letters are drawn like the replay's: a clean
 letter in the game's colours, with the shine kept for SS and the glow for charged plays. Medal pictures now show what each
