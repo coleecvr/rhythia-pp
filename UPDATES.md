@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 11.** The replay viewer's music now starts in step with the picture. After Play, a pause or a skip, the picture
+waits for the song to really start instead of running ahead and catching up, so the music is no longer off for the first
+second. The Audio offset slider no longer makes the song jump while you move it; the new setting takes hold a moment after
+you stop, and its help now says it needs the song playing. On a phone, a late answer to the first tap no longer stops the
+song. Nothing about PP or ratings changes.
+
 **Patch 10.** The website's Rankings page now lists every ranked player, not only the first thousand. The replay viewer's
 song panel now says that a curator can share a map's song so it plays for everyone, so you know to ask in the Discord.
 Behind the scenes, the bot's own web server is stricter with other computers and websites: they can no longer register
