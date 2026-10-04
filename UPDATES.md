@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 15.** Small fixes from a pass over the site on a phone: the search button in the header shows its magnifying
+glass again, the rating label on a map's chart no longer sits under the peak, phone charts show fewer time labels, and an
+empty map leaderboard now says "Be the first: submit a replay". The How PP works page is five short points instead of one
+long paragraph. Behind the scenes, the local web server no longer hands Discord account numbers to other computers. Nothing
+about PP or ratings changes.
+
 **Patch 14.** The player page is shorter: long lists of plays show five rows with a "Show all" button, and medals sit
 two to a row on phones. The Discord info pages have plain headings. The bot can now post each patch's note into an
 optional channel that players switch on with a role, and the project's GitHub feed stays with staff. None of that appears
