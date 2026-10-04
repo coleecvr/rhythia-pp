@@ -5,6 +5,13 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 12.** The replay viewer's on-screen panels (grade, accuracy, combo, progress and health) now hold still while the
+camera follows your cursor, instead of bouncing around. On the website, grade letters are drawn like the replay's: a clean
+letter in the game's colours, with the shine kept for SS and the glow for charged plays. Medal pictures now show what each
+medal asks for, not just its name. For anyone running their own copy, the backup list shows when each backup was taken,
+how many players and plays it holds and which is newest, restoring on a new PC no longer starts an empty leaderboard, and
+there is a one-page recovery guide. Nothing about PP or ratings changes.
+
 **Patch 11.** The replay viewer's music now starts in step with the picture. After Play, a pause or a skip, the picture
 waits for the song to really start instead of running ahead and catching up, so the music is no longer off for the first
 second. The Audio offset slider no longer makes the song jump while you move it; the new setting takes hold a moment after
