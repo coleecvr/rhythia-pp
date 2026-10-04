@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 16.** The website is easier to read and use: the footer text is clearer, links in tables are underlined, buttons
+are easier to tap on a phone, and keyboard users can see where they are. Pages now rise in gently when you open them,
+buttons give a little when pressed, the big numbers on the home, stats and player pages count up, and map cards ease
+closer with a soft light on hover. The replay help text is plainer, and when the bot has been quiet for a while the page
+now says when it last checked in and that everything still works. Behind the scenes the bot reconnects on its own after
+a connection goes quiet, notices channels made while it was offline, keeps private codes out of its error messages, and
+a release note is no longer lost because one side step failed. The website's server also no longer hands out a private
+page to other computers. Nothing about PP or ratings changes.
+
 **Patch 15.** Small fixes from a pass over the site on a phone: the search button in the header shows its magnifying
 glass again, the rating label on a map's chart no longer sits under the peak, phone charts show fewer time labels, and an
 empty map leaderboard now says "Be the first: submit a replay". The How PP works page is five short points instead of one
