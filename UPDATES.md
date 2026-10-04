@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 14.** The player page is shorter: long lists of plays show five rows with a "Show all" button, and medals sit
+two to a row on phones. The Discord info pages have plain headings. The bot can now post each patch's note into an
+optional channel that players switch on with a role, and the project's GitHub feed stays with staff. None of that appears
+in the server until its owner turns it on. The roadmap page wording is plainer too. Nothing about PP or ratings changes.
+
 **Patch 13.** The website looks calmer and plainer: flatter cards, simpler headings and a simpler home page, and the
 roadmap page now shows what players get, in plain words. The Discord bot draws grades with the same letters as the
 replay viewer, and every medal now has a name that says what it asks for, such as "2★ Pass". Nothing about PP or ratings
