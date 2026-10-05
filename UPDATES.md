@@ -5,6 +5,16 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 20.** Your total PP is now the plain sum of your best play on every ranked map. Nothing is weighted by rank any
+more, so no play counts for less because of the others: a play shows the PP it earned and adds exactly that to your
+total, and beating your own score on a map adds the difference. How a single play's PP is worked out has not changed.
+Everyone's totals are worked out again the first time the bot starts on this version (it saves a copy of the leaderboard
+first), so totals go up, and a few players may reach a milestone role or medal straight away. The "counts N%" note under
+each best play is gone, and the accuracy beside your total is now the plain average over all your submitted plays. Also in this
+patch: map search now finds titles and artists in any alphabet and with a backslash, titles and bios are never cut in the
+middle of an emoji, and replay checking is harder to stall (a replay that lists thousands of modifiers is refused, and
+thousands of skips no longer freeze the bot).
+
 **Patch 19.** Small fixes in the Discord bot. If a role update fails, the review buttons and moderator commands now
 still finish their job: the log line, the message to the player and the new-#1 post are no longer skipped, and a change
 that was made is no longer reported as "something went wrong". A title cut off in the middle of an emoji no longer
