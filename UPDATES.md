@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 19.** Small fixes in the Discord bot. If a role update fails, the review buttons and moderator commands now
+still finish their job: the log line, the message to the player and the new-#1 post are no longer skipped, and a change
+that was made is no longer reported as "something went wrong". A title cut off in the middle of an emoji no longer
+leaves half an emoji in a card, "59 minutes ago" no longer rounds up to "60m ago" (or "24h ago"), and a profile that
+lost a tiny bit of PP no longer shows "-0pp". On its very first connect to Discord, the bot now waits out a short
+network blip instead of stopping. The roadmap channels notice when an item becomes a bug, and the challenge sheet
+understands more kinds of Google Sheets links and forgets an old error once it loads again. Nothing about PP or ratings
+changes.
+
 **Patch 18.** The bot looks after its data better. Just before each update installs, it now saves a copy of the
 leaderboard first and keeps the newest five, a backup that fails is mentioned once instead of every hour, and a
 snapshot that fails no longer replaces the good one from earlier in the day. Checking a backup by name now works, the
