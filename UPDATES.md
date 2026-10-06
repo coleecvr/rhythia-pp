@@ -5,6 +5,26 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 21.** The website is lighter and plainer, and the bot says less and gives away less. Pages load faster: the first
+visit now sends about 89 KB of fonts instead of about 430 KB, with the same look. The Maps, Challenge pool, How to submit
+and How PP works pages are reworded to say one idea at a time, and the medals' flavour lines are shown as quiet lines
+(thirteen of them now say something true about the feat instead of a joke). On a replay page, the numbers on the right of
+the grid are no longer cut off on a phone, and Clean view (for screen recording) starts 1.5 seconds before the first
+note instead of up to 2.5 seconds of empty grid. A map's page now says "Showing the top 100 of N players" when it lists
+only the first 100. The `/pp` calculator gives the PP and the accuracy it really used, and no longer shows how the number is worked out. The bot's cards and
+messages are plainer: normal-case labels, one flat colour for the big PP number, a whole-number change in your total, no
+exclamation marks and fewer emoji, and the top-plays posts read "New #1" and "New top play". A map you add with
+`/nominate` or `/submit` now stays off the public website until a curator ranks it, and you can have up to 5 such maps
+waiting at a time (curators have no limit, and a map a curator adds is shown straight away). The bot no longer gives away the name of a player who opted out or was
+banned when it refuses a copied replay or a shared PC, and a `/submit` that is held for review or refused is answered
+privately in `#bot-commands`. The challenge sheet now understands a map link written as a spreadsheet formula and a map
+that is simply called "Song". For curators: map suggestions carry `#<id>`, and a zip made on a Mac no longer adds its
+hidden folder as maps. For the owner: the bot keeps the newest ten copies of each kind of safety backup, repairs a
+damaged website folder once, warns before the site loses its covers or nears GitHub's size limit, keeps the newest 20
+refused replay files per player, tries again when a stopped-update or backup notice did not reach Discord, and a
+busy roadmap channel is edited in place instead of getting a second copy of its list. Nothing about PP or ratings
+changes.
+
 **Patch 20.** Your total PP is now the plain sum of your best play on every ranked map. Nothing is weighted by rank any
 more, so no play counts for less because of the others: a play shows the PP it earned and adds exactly that to your
 total, and beating your own score on a map adds the difference. How a single play's PP is worked out has not changed.
