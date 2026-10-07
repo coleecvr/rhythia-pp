@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 24.** Mostly behind the scenes. The server's owner can now tidy the Discord layout from inside Discord: a command
+shows a plain list of what would change, in a staff-only channel, and one button applies it after a confirmation, so
+nothing in the server changes until the owner says so. The bot also keeps an extra private check on the Nightly replays
+it reads, which only measures and never judges a play. Nothing you see on the website changes, and nothing about PP or
+ratings changes.
+
 **Patch 23.** Replays fill more of a tall screen. In Clean view (for screen recording) at a vertical size, and on a phone
 that fills its window, the play area is about 80% of the width instead of about 63%, so the notes, the cursor and the
 trail are bigger. In those views the combo level now leads the numbers line, where the combo ring used to sit beside
