@@ -5,6 +5,13 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 23.** Replays fill more of a tall screen. In Clean view (for screen recording) at a vertical size, and on a phone
+that fills its window, the play area is about 80% of the width instead of about 63%, so the notes, the cursor and the
+trail are bigger. In those views the combo level now leads the numbers line, where the combo ring used to sit beside
+the grid. The phone's ordinary replay page and every desktop size look exactly as before. On a phone, the home page's
+Latest plays rows no longer leave a stray dot at the end of a line, and the speed and the time stay together.
+Nothing about PP or ratings changes.
+
 **Patch 22.** Replays are easier to watch on a phone, and a replay ends on a result card. On a phone, the replay's combo,
 misses and PP are one readable line under the grid, with the grade and accuracy at the front of it, and the speed and mod
 chips are readable too. The same goes for the vertical recording. A replay's PP shows a dash until it earns its first
