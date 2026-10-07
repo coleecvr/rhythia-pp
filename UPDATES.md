@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 25.** Two small touches on the website, and a safer Discord tidy-up for the owner. A medal's hover and tap card
+now reads its tier line in normal case ("Bronze · Full combo") and its name in the same face as the rest of the site. On a
+phone, the home page's Latest plays rows no longer show how long ago a play was, so the details fit one line under the map
+name more often (a player's page still shows it). For the server's owner, the Discord layout command is stricter before
+anything is changed: it never deletes a channel (an old channel is renamed and made staff-only instead), it stops and says
+which steps went through if one fails, it checks that the server did not change since the list was shown, and it leaves
+alone the roles and people it does not manage. Nothing is applied until the owner presses the button. Nothing about PP or
+ratings changes.
+
 **Patch 24.** Mostly behind the scenes. The server's owner can now tidy the Discord layout from inside Discord: a command
 shows a plain list of what would change, in a staff-only channel, and one button applies it after a confirmation, so
 nothing in the server changes until the owner says so. The bot also keeps an extra private check on the Nightly replays
