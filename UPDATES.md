@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 22.** Replays are easier to watch on a phone, and a replay ends on a result card. On a phone, the replay's combo,
+misses and PP are one readable line under the grid, with the grade and accuracy at the front of it, and the speed and mod
+chips are readable too. The same goes for the vertical recording. A replay's PP shows a dash until it earns its first
+point, instead of a confusing "0pp". When the last note is played, the replay ends on a card with the result; in Clean
+view (for screen recording) the card stays for a few seconds and then leaves by itself. On a phone the home page's Top
+players rows no longer spill onto a third line, and a Top plays row shows its grade and accuracy next to the map. For the
+owner: the website can now also be kept as a copy on a second host (it does nothing until the owner sets it up).
+Nothing about PP or ratings changes.
+
 **Patch 21.** The website is lighter and plainer, and the bot says less and gives away less. Pages load faster: the first
 visit now sends about 89 KB of fonts instead of about 430 KB, with the same look. The Maps, Challenge pool, How to submit
 and How PP works pages are reworded to say one idea at a time, and the medals' flavour lines are shown as quiet lines
