@@ -5,6 +5,10 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 29.** One small fix for phones. On a map page, the Rewrite speed row no longer opens scrolled past its "Rewrite"
+label: on a narrow phone the label and the lit speed now both show when they fit together. The Nightly speed row, wider
+screens and every other page are unchanged. Nothing about PP or ratings changes.
+
 **Patch 28.** Three small touches on the website and the bot. The browser tab now says which page is open (a player's
 name, a map's title, "Player rankings", and so on, followed by the site's name), so tabs, the back-button list and
 bookmarks tell pages apart; the home page and any address that is not there keep the plain title. On a phone, a section
