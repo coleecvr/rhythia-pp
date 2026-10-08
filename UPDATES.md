@@ -5,6 +5,15 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 28.** Three small touches on the website and the bot. The browser tab now says which page is open (a player's
+name, a map's title, "Player rankings", and so on, followed by the site's name), so tabs, the back-button list and
+bookmarks tell pages apart; the home page and any address that is not there keep the plain title. On a phone, a section
+tab that is lit when a page opens is now brought into the middle of its row instead of sitting cut off at the edge, and a
+map page's Nightly speed row fades at the edge it continues past, like the other scrolling rows. And the bot can now find
+the map for a Rewrite replay that names its map by a long code instead of its name (something the Rewrite client does not
+do today, so this is ready for when it does), but only when exactly one ranked map has that many notes; otherwise it asks
+for the map file as before, and the play still goes through every normal check. Nothing about PP or ratings changes.
+
 **Patch 27.** Behind the scenes only. The private check on the Nightly replays that the bot reads records a few more plain
 counts, so the owner can tell why a handful of runs disagree with the game: how big a group of near notes the check
 needed, where an older health model would put the longer cases, and how the disagreements split by the replay file's
