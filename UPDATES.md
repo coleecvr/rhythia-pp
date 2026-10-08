@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 26.** Behind the scenes only. The private check on the Nightly replays that the bot reads now also records, as plain
+counts, what a disagreement with the game looks like, so the owner can tell the likely causes apart. It only measures and
+never judges a play, and the bot reads the replays once more to fill it in. The automatic checks that run on every change
+are also steadier (one of them could fail by chance on a slow machine, and a very long line can no longer slow the scan for
+secrets). Nothing you see on the website changes, and nothing about PP or ratings changes.
+
 **Patch 25.** Two small touches on the website, and a safer Discord tidy-up for the owner. A medal's hover and tap card
 now reads its tier line in normal case ("Bronze · Full combo") and its name in the same face as the rest of the site. On a
 phone, the home page's Latest plays rows no longer show how long ago a play was, so the details fit one line under the map
