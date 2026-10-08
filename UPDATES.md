@@ -5,6 +5,12 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 27.** Behind the scenes only. The private check on the Nightly replays that the bot reads records a few more plain
+counts, so the owner can tell why a handful of runs disagree with the game: how big a group of near notes the check
+needed, where an older health model would put the longer cases, and how the disagreements split by the replay file's
+version. It only measures and never judges a play, and the bot reads the replays once more to fill it in. Nothing you see
+on the website changes, and nothing about PP or ratings changes.
+
 **Patch 26.** Behind the scenes only. The private check on the Nightly replays that the bot reads now also records, as plain
 counts, what a disagreement with the game looks like, so the owner can tell the likely causes apart. It only measures and
 never judges a play, and the bot reads the replays once more to fill it in. The automatic checks that run on every change
