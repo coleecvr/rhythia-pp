@@ -5,6 +5,11 @@ too, and the [website](https://coleecvr.github.io/rhythia-pp/) always runs the n
 
 ## October 2026
 
+**Patch 30.** Behind the scenes only. The owner's admin tool can now merge two accounts that belong to one person, even
+when each is linked to a different Discord account, and can rename a player. The merge moves every play, medal and
+computer link onto the account that is kept, and it does nothing at all if any step fails. Nothing you see on the
+website changes, and nothing about PP or ratings changes.
+
 **Patch 29.** One small fix for phones. On a map page, the Rewrite speed row no longer opens scrolled past its "Rewrite"
 label: on a narrow phone the label and the lit speed now both show when they fit together. The Nightly speed row, wider
 screens and every other page are unchanged. Nothing about PP or ratings changes.
