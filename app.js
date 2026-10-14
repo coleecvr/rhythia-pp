@@ -18,6 +18,8 @@ const currentPage = () => shown;
 
 // ---------- helpers ----------
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// For href values built from data: only http(s) and relative URLs; anything else (javascript:, data:) becomes "#".
+const safeUrl = u => { try { return ['http:', 'https:'].includes(new URL(u, location.href).protocol) ? String(u) : '#'; } catch { return '#'; } };
 const enc = encodeURIComponent;
 const fmt = (n, d = 2) => Number(n).toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
 const pct = a => `${fmt(a * 100)}%`;
@@ -430,7 +432,7 @@ function poolPanel(d) {
     </div>
     ${p.patterns.length ? `<div class="chips" style="margin-top:10px">${p.patterns.map(x => `<span class="pill">${esc(x)}</span>`).join(' ')}</div>` : ''}
     ${p.bestCamlock || p.bestSpin ? `<p class="muted" style="margin:12px 0 0;font-size:13.5px">Best passes on the sheet: ${[p.bestCamlock && p.bestCamlock !== 'NONE' ? `camlock ${esc(p.bestCamlock)}` : '', p.bestSpin && p.bestSpin !== 'NONE' ? `spin ${esc(p.bestSpin)}` : ''].filter(Boolean).join(' · ') || 'none yet'}</p>` : ''}
-    ${p.link ? `<p style="margin:12px 0 0"><a class="btn ghost small" href="${esc(p.link)}" rel="noopener">Download the sheet's copy</a></p>` : ''}
+    ${p.link ? `<p style="margin:12px 0 0"><a class="btn ghost small" href="${esc(safeUrl(p.link))}" rel="noopener">Download the sheet's copy</a></p>` : ''}
   </section>`;
 }
 
@@ -467,7 +469,7 @@ async function poolPage(app = currentPage()) {
           <td class="wrapcell" style="white-space:normal">${e.mapId ? `<a href="#/map/${e.mapId}"><b>${esc(e.song)}</b></a>` : `<b>${esc(e.song)}</b>`}<div class="muted" style="font-size:12.5px">${esc(e.patterns.slice(0, 4).join(', '))}</div></td>
           <td class="hide-sm">${esc(e.mapper ?? '')}</td>
           <td class="r num">${e.sheetStars ?? '—'}</td><td class="r">${e.stars != null ? stars(e.stars) : '—'}</td>
-          <td>${!e.mapId && e.link ? `<a class="btn ghost small" href="${esc(e.link)}" rel="noopener" title="Not in the library yet">Download</a>` : poolState(e.state)}</td></tr>`).join('')}
+          <td>${!e.mapId && e.link ? `<a class="btn ghost small" href="${esc(safeUrl(e.link))}" rel="noopener" title="Not in the library yet">Download</a>` : poolState(e.state)}</td></tr>`).join('')}
         </tbody></table></div>
         ${list.length > rows.length ? `<p class="more"><button class="btn ghost small" data-more="${esc(t)}">Show ${Math.min(50, list.length - rows.length)} more</button> <span class="muted">${rows.length} of ${list.length}</span></p>` : ''}`;
     }).join('') || `<p class="empty">${q ? 'No map or mapper on the sheet matches that.' : 'Nothing here.'}</p>`;
@@ -1101,7 +1103,7 @@ async function route({ keepScroll = false, focus = false } = {}) {
     else if (page === 'map' && arg) await mapPage(arg);
     else if (page === 'player' && arg) await playerPage(safeDecode(arg));
     else if (page === 'player') { history.replaceState(null, '', '#/rankings'); await rankings(); }   // an address with no name: the Rankings page, where players are found
-    else if (page === 'replay' && arg) { setTab('maps'); await (await import('./replay.js?v=8a2dc9e0fb')).mount(container, Number(arg), { api, esc, fmt, pct, pp, grade, stars, avatar, playerLink, share, coverUrl, replayFileUrl, songUrl }); }
+    else if (page === 'replay' && arg) { setTab('maps'); await (await import('./replay.js?v=8a2dc9e0fb')).mount(container, Number(arg), { api, esc, safeUrl, fmt, pct, pp, grade, stars, avatar, playerLink, share, coverUrl, replayFileUrl, songUrl }); }
     else if (page === 'submit') submitPage();
     else if (page === 'calc' && !isStatic) await calcPage();
     else if (page === 'about') await aboutPage();

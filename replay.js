@@ -131,7 +131,7 @@ export async function mount(app, id, h) {
           <p class="eyebrow">Watch it in the game</p>
           ${v.format === 'sspre' ? `<ol class="steps">
             ${h.replayFileUrl(v) ? `<li><a class="btn ghost small" href="${h.replayFileUrl(v)}" download>Download the replay</a></li>` : ''}
-            <li>Have the map installed: <a href="#/map/${v.mapId}">${h.esc(v.title)}</a>${v.poolLink ? ` (<a href="${h.esc(v.poolLink)}" rel="noopener">download it</a>, then drag the .sspm onto the game to install it)` : ''}</li>
+            <li>Have the map installed: <a href="#/map/${v.mapId}">${h.esc(v.title)}</a>${v.poolLink ? ` (<a href="${h.esc(h.safeUrl(v.poolLink))}" rel="noopener">download it</a>, then drag the .sspm onto the game to install it)` : ''}</li>
             <li>Open Sound Space Plus and drag the replay onto the window while the song list is showing.</li>
           </ol>
           <p class="muted" style="font-size:12.5px;margin:10px 0 0">The game plays it with its own graphics and sound.</p>`
