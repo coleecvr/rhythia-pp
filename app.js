@@ -85,11 +85,11 @@ window.addEventListener('resize', () => scrollHints());
 
 /**
  * Interactive line chart. values: numbers; opts: { min, max, invert (bigger = lower), yTicks: [{ v, label }],
- * xTicks: [{ i, label }], tip: i => html, rating: { v, label }, marker: index }.
+ * xTicks: [{ i, label }], tip: i => html, rating: { v, label }, marker: index, label: text summary for screen readers }.
  * Lines are SVG; labels are HTML so they stay crisp at any width.
  */
 function chart(el, values, opts) {
-  const { min = 0, max = Math.max(...values, 1), invert = false, yTicks = [], xTicks = [], tip, rating, marker } = opts;
+  const { min = 0, max = Math.max(...values, 1), invert = false, yTicks = [], xTicks = [], tip, rating, marker, label } = opts;
   const n = values.length;
   const X = i => (n > 1 ? (i / (n - 1)) * 100 : 50);
   const Y = v => { const f = (v - min) / (max - min || 1); return invert ? f * 100 : 100 - f * 100; };
@@ -107,7 +107,7 @@ function chart(el, values, opts) {
     </svg>
     ${rating ? `<div class="rating${marker != null && X(marker) > 50 ? ' left' : ''}" style="top:${Y(rating.v)}%">${rating.label}</div>` : ''}
     ${marker != null ? `<div class="dot" style="left:${X(marker)}%;top:${Y(values[marker])}%"></div>` : ''}
-    <div class="hover" role="img" tabindex="0" aria-label="Chart: move over it for values"></div>`;
+    <div class="hover" role="img" tabindex="0" aria-label="${esc(label ?? 'Chart: move over it for values')}"></div>`;
   const hover = el.querySelector('.hover');
   let vline, dot, box;
   const show = i => {
@@ -143,6 +143,7 @@ function strainChart(el, d, speed, starsAt) {
   const peak = values.indexOf(Math.max(...values));
   el.style.setProperty('--line', `color-mix(in srgb, var(--${tier(starsAt)}) 70%, white)`);
   chart(el, values, { min: 0, max, yTicks, xTicks, marker: peak, rating: { v: starsAt, label: `${fmt(starsAt)}★ rating` },
+    label: `Difficulty over time: ${fmt(values[0], 1)}★ at the start, hardest part ${fmt(values[peak], 1)}★ at ${clock(timeAt(peak))}, ${fmt(values[values.length - 1], 1)}★ at the end.`,
     tip: i => `<b>${fmt(values[i], 1)}★</b> at ${clock(timeAt(i))}${i === peak ? ' · hardest part' : ''}` });
 }
 
@@ -673,7 +674,7 @@ async function playerPage(name, app = currentPage()) {
     const ranks = h.map(x => x.rank), lo = Math.max(1, Math.min(...ranks) - 1), hi = Math.max(Math.max(...ranks) + 1, lo + 3);
     const day = d => new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
     el.style.setProperty('--line', accent);
-    chart(el, ranks, { min: lo, max: hi, invert: true, marker: h.length - 1, tip: i => `<b>#${h[i].rank}</b> · ${pp(h[i].pp)} · ${day(h[i].day)}` });
+    chart(el, ranks, { min: lo, max: hi, invert: true, marker: h.length - 1, label: `Rank history: #${ranks[0]} on ${day(h[0].day)}, #${ranks[ranks.length - 1]} on ${day(h[h.length - 1].day)}, best #${Math.min(...ranks)}.`, tip: i => `<b>#${h[i].rank}</b> · ${pp(h[i].pp)} · ${day(h[i].day)}` });
   }
   if (hist.monthly.length >= 2) {
     const m = hist.monthly, el = document.getElementById('pf-monthly'), max = Math.max(...m.map(x => x.plays));
@@ -681,7 +682,7 @@ async function playerPage(name, app = currentPage()) {
     const step = niceStep(max, 4), yTicks = []; for (let v = step; v <= max * 1.1; v += step) yTicks.push({ v, label: String(v) });
     const xTicks = (m.length <= 4 ? m.map((_, i) => i) : [0, Math.round((m.length - 1) / 2), m.length - 1]).map(i => ({ i, label: label(m[i].month) }));
     el.style.setProperty('--line', accent);
-    chart(el, m.map(x => x.plays), { min: 0, max: max * 1.15, yTicks, xTicks, tip: i => `<b>${m[i].plays}</b> play${m[i].plays === 1 ? '' : 's'}${m[i].passes != null && m[i].passes < m[i].plays ? ` (${m[i].passes} passed, ${m[i].plays - m[i].passes} attempt${m[i].plays - m[i].passes === 1 ? '' : 's'})` : ''} · ${label(m[i].month)}` });
+    chart(el, m.map(x => x.plays), { min: 0, max: max * 1.15, yTicks, xTicks, label: `Plays per month from ${label(m[0].month)} to ${label(m[m.length - 1].month)}: ${m.reduce((n, x) => n + x.plays, 0)} in total, most in ${label(m[m.findIndex(x => x.plays === max)].month)} with ${max}.`, tip: i => `<b>${m[i].plays}</b> play${m[i].plays === 1 ? '' : 's'}${m[i].passes != null && m[i].passes < m[i].plays ? ` (${m[i].passes} passed, ${m[i].plays - m[i].passes} attempt${m[i].plays - m[i].passes === 1 ? '' : 's'})` : ''} · ${label(m[i].month)}` });
   }
 }
 
