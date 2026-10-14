@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhythia Community PP</title>
+  <meta name="description" content="Community star ratings, PP and leaderboards for Rhythia, Nightly and Rewrite.">
+  <meta name="theme-color" content="#0f0c18">
+  <meta name="rpp-static" content="1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob: https://cdn.discordapp.com; media-src 'self' blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://raw.githubusercontent.com https://discord.com">
+  <script type="application/json" id="rpp-config">{"discord":"https://discord.gg/YwrN6EmSZj","publicUrl":"https://coleecvr.github.io/rhythia-pp/","clientId":"1554865507687989268"}</script>
+  <meta property="og:title" content="Rhythia Community PP">
+  <meta property="og:description" content="Community star ratings, PP and leaderboards for Rhythia, Nightly and Rewrite.">
+  <meta property="og:image" content="https://coleecvr.github.io/rhythia-pp/og/home.png">
+  <meta property="og:url" content="https://coleecvr.github.io/rhythia-pp/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rhythia Community PP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/Unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=e6d4845db9">
+  <!-- the logo (a note with a star), same shapes as branding/make_icons.py -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%238f6af0'/%3E%3Crect x='13' y='13' width='74' height='74' rx='17' fill='%231c182c'/%3E%3Cpath d='M50 18.4L59.2 39.7 82.3 41.9 64.9 57.2 70 79.9 50 68 30 79.9 35.1 57.2 17.7 41.9 40.8 39.7Z' fill='%23f4f0ff'/%3E%3C/svg%3E">
+  <script type="module" src="app.js?v=643c1e817f"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#8f6af0"/><rect x="13" y="13" width="74" height="74" rx="17" fill="#1c182c"/><path d="M50 18.4L59.2 39.7 82.3 41.9 64.9 57.2 70 79.9 50 68 30 79.9 35.1 57.2 17.7 41.9 40.8 39.7Z" fill="#f4f0ff"/></svg>
+        <span class="brand-text">RHYTHIA PP<small>Community rankings</small></span>
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#/" data-tab="home">Home</a>
+        <a href="#/rankings" data-tab="rankings">Rankings</a>
+        <a href="#/maps" data-tab="maps">Maps</a>
+        <a href="#/stats" data-tab="stats">Stats</a>
+        <a href="#/submit" data-tab="submit">Submit</a>
+        <a href="#/about" data-tab="about">How PP works</a>
+        <a href="#/roadmap" data-tab="roadmap">Roadmap</a>
+      </nav>
+      <div class="psearch top" role="search" aria-label="Find a player"><input id="psearch" type="search" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></div>
+      <button class="search-toggle" id="search-toggle" type="button" aria-label="Find a player" aria-expanded="false" aria-controls="psearch"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+      <div class="me" id="me"></div>
+    </div>
+  </header>
+  <div id="demo-banner" class="demo-banner" hidden>
+    <div class="wrap">Preview mode: this server contains <b>synthetic demo players</b> (marked <span class="pill demo">DEMO</span>) to show the layout. They are not real scores.</div>
+  </div>
+  <div id="offline-banner" class="demo-banner" hidden>
+    <div class="wrap">The bot last checked in <b id="offline-since"></b>, so it's probably offline for now. Everything here still works, and new plays will show up once it's back.</div>
+  </div>
+  <main id="app" class="wrap"></main>
+  <footer class="wrap footer">
+    <span>Community-made rankings for Rhythia&rsquo;s Nightly and Rewrite clients. Unofficial fan project. © 2026 coleecvr. Flag art: <a href="https://github.com/twitter/twemoji" rel="noopener">Twemoji</a>, CC-BY 4.0.</span>
+    <span id="algo"></span>
+  </footer>
+</body>
+</html>
