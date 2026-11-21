@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Page not found</title>
+  <meta name="theme-color" content="#0f0c18">
+  <meta http-equiv="refresh" content="0; url=https://coleecvr.github.io/rhythia-pp/">
+  <script>(function () {
+  var root = "/rhythia-pp/", path = location.pathname;
+  if (path.indexOf(root) !== 0) root = '/';
+  var rest = path.slice(root.length), hit = /^(m|r)\/([0-9]+)\/?$/.exec(rest), who = /^p\/([a-z0-9._-]+)\/?$/.exec(rest), page = '#/not-found';
+  if (hit) page = '#/' + (hit[1] === 'm' ? 'map' : 'replay') + '/' + hit[2]; else if (who) page = '#/player/' + who[1];
+  location.replace(root + page);
+})();</script>
+</head>
+<body style="background:#0f0c18;color:#f4f1ff;font-family:system-ui,sans-serif">
+  <p><a href="https://coleecvr.github.io/rhythia-pp/" style="color:#b89cff">Open the site</a></p>
+</body>
+</html>
